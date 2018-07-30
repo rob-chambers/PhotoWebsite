@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- jQuery -->
+        <script  type="text/javascript"  src="/node_modules/jquery/dist/jquery.min.js"></script>
+
+        <link    href="/css/main.css" rel="stylesheet" type="text/css">
+
+        <!-- nanogallery2 -->
+        <link    href="/node_modules/nanogallery2/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
+        <script  type="text/javascript" src="/node_modules/nanogallery2/dist/jquery.nanogallery2.min.js"></script>
+    </head>
+
+    <body>
+        <div id="nanogallery2" />
+  </body>
+
+  <script >
+   $().ready(function () {
+      $("#nanogallery2").nanogallery2({
+        // gallery settings        
+        itemsBaseURL:     '/snow/images/',
+        items: [
+            { src: 'snow1.jpg', srct: 'snow1t.jpg' },
+            { src: 'snow2.jpg', srct: 'snow2t.jpg' },
+            { src: 'snow3.jpg', srct: 'snow3t.jpg' },
+            { src: 'snow4.jpg', srct: 'snow4t.jpg' },
+            { src: 'snow5.jpg', srct: 'snow5t.jpg' },
+            { src: 'snow6.jpg', srct: 'snow6t.jpg' },
+            { src: 'snow7.jpg', srct: 'snow7t.jpg' },
+            { src: 'snow8.jpg', srct: 'snow8t.jpg' }
+          ],
+
+        "thumbnailWidth": "200",
+        "thumbnailHeight": "auto",
+        "thumbnailBorderVertical": 0,
+        "thumbnailBorderHorizontal": 0,
+        "colorScheme": {
+          "thumbnail": {
+            "background": "rgba(0,0,0,0)"
+          }
+        },
+        "thumbnailLabel": {
+          "display": false
+        },
+        "thumbnailHoverEffect2": "imageScaleIn80",
+        "galleryDisplayMode": "pagination",
+        "thumbnailAlignment": "center",
+        "thumbnailGutterWidth": 10,
+        "thumbnailGutterHeight": 10
+    });
+});  
+  </script>
+
+</html>

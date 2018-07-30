@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- jQuery -->
+        <script  type="text/javascript"  src="/node_modules/jquery/dist/jquery.min.js"></script>
+
+        <link    href="/css/main.css" rel="stylesheet" type="text/css">
+
+        <!-- nanogallery2 -->
+        <link    href="/node_modules/nanogallery2/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
+        <script  type="text/javascript" src="/node_modules/nanogallery2/dist/jquery.nanogallery2.min.js"></script>
+    </head>
+
+    <body>
+        <div id="nanogallery2" /> 
+  </body>
+
+  <script >
+   $().ready(function () {
+      $("#nanogallery2").nanogallery2({
+        // gallery settings        
+        itemsBaseURL:     '/iceland/images/',
+        items: [
+            { src: '1.jpg', srct: '1t.jpg' },
+            { src: '2.jpg', srct: '2t.jpg' },
+            { src: '3.jpg', srct: '3t.jpg' },
+            { src: '4.jpg', srct: '4t.jpg' },
+            { src: '5.jpg', srct: '5t.jpg' },
+            { src: '6.jpg', srct: '6t.jpg' },
+            { src: '7.jpg', srct: '7t.jpg' },
+            { src: '8.jpg', srct: '8t.jpg' },
+            { src: '9.jpg', srct: '9t.jpg' },
+            { src: '10.jpg', srct: '10t.jpg' },
+            { src: '11.jpg', srct: '111t.jpg' },
+            { src: '12.jpg', srct: '12t.jpg' },
+            { src: '13.jpg', srct: '13t.jpg' }
+          ],
+
+        "thumbnailWidth": "200",
+        "thumbnailHeight": "auto",
+        "thumbnailBorderVertical": 0,
+        "thumbnailBorderHorizontal": 0,
+        "colorScheme": {
+          "thumbnail": {
+            "background": "rgba(0,0,0,0)"
+          }
+        },
+        "thumbnailLabel": {
+          "display": false
+        },
+        "thumbnailHoverEffect2": "imageScaleIn80",
+        "galleryDisplayMode": "pagination",
+        "thumbnailAlignment": "center",
+        "thumbnailGutterWidth": 10,
+        "thumbnailGutterHeight": 10
+    });
+});  
+  </script>
+
+</html>
